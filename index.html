@@ -20,15 +20,15 @@ img {
 <img src="https://rq.cx/ruqimobility.jpg" alt="如祺车主 - 大平台，订单多，提现快！" style="width:100%;">
 <img src="https://rq.cx/ruqichezhu.jpg" alt="如祺司机招募，长按图片保存，打开微信从相册里扫一扫加盟如祺" style="width:100%;">
 <p align="center">提示：<font color="#006400" size="4">长按图片</font>保存至手机相册<br />打开微信从相册扫码加盟如祺</p>
-<p align="center"><script>
+<center><p><script>
 function addCopyButtons() {
  document.querySelectorAll('pre code').forEach(block => {
    const btn = document.createElement('button');
-   btn.textContent = '复制小程序链接';
+   btn.textContent = '复制如祺司机招募小程序链接';
    btn.className = 'copy-btn';
    btn.onclick = () => {
      navigator.clipboard.writeText(block.textContent.trim())
-       .then(() => alert('复制成功，请在微信打开小程序'))
+       .then(() => alert('复制成功，请在微信分享打开小程序'))
        .catch(() => alert('复制失败，请长按文字手动复制'));
    };
    block.parentNode.insertBefore(btn, block);
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', addCopyButtons);
 </script>
 <pre><code class="language-js">
 #小程序://司机招募/NtKMoc2tCl2Txbp
-</code></pre></p>
-<p align="center">微信对话框💬分享小程序链接打开如祺司机招募小程序，如需帮助请拨打如祺出行官方客服电话：<a href="tel:4001336666">400-133-6666</a></p>
+</code></pre></p></center>
+<center><p>微信对话框💬分享打开小程序<br />如祺出行官方客服电话：<a href="tel:4001336666">400-133-6666</a></p></center>
 </body>
 </html>
