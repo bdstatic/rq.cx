@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>如祺出行｜领打车券｜车主招募｜免费领手机卡</title>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:PingFang SC,Helvetica Neue,Microsoft YaHei,sans-serif;}
+        body{background-color:#f7f8fa;color:#222;padding-bottom:50px;}
+
+        /* 顶部渐变头部 */
+        .header-wrap{
+            background: linear-gradient(135deg,#ff4c3b,#ffbc00);
+            padding:40px 20px;
+            text-align:center;
+            color:#ffffff;
+        }
+        .header-wrap h1{
+            font-size:38px;
+            font-weight:700;
+            margin-bottom:10px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.35), 0 0 6px rgba(255,255,255,0.4);
+        }
+        .header-wrap p{
+            font-size:19px;
+            opacity:0.93;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.25);
+        }
+
+        /* 通用卡片样式 统一高级质感 */
+        .main-card{
+            width:calc(100% - 32px);
+            margin:28px auto 0;
+            border-radius:26px;
+            box-shadow:0 8px 24px rgba(0,0,0,0.08);
+            overflow:hidden;
+        }
+
+        /* 乘客卡片 红色渐变 */
+        .card-passenger{
+            background:linear-gradient(160deg,#ff5240,#ff7058);
+            color:#fff;
+            padding:34px 24px;
+            text-align:center;
+        }
+
+        /* 司机卡片 黄色渐变 */
+        .card-driver{
+            background:linear-gradient(160deg,#ffc107,#ffaa00);
+            color:#222;
+            padding:34px 24px;
+            text-align:center;
+        }
+
+        /* 手机卡卡片 蓝色高级渐变 */
+        .card-sim{
+            background:linear-gradient(160deg,#2888ff,#42b9ff);
+            color:#fff;
+            padding:34px 24px;
+            text-align:center;
+        }
+
+        /* 通用标题发光阴影 */
+        .card-big-title{
+            font-size:32px;
+            font-weight:700;
+            margin-bottom:12px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3), 0 0 5px rgba(255,255,255,0.35);
+        }
+        .card-desc-text{
+            font-size:17px;
+            opacity:0.9;
+            line-height:1.5;
+            margin-bottom:28px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.22);
+        }
+
+        /* 二维码白色精致框 */
+        .qr-container{
+            background:#ffffff;
+            border-radius:20px;
+            padding:22px;
+            width:min(290px,95%);
+            margin:0 auto 18px;
+            box-shadow:0 4px 12px rgba(0,0,0,0.06);
+        }
+        .qr-img{width:100%;display:block;border-radius:8px;}
+        .scan-tip-text{
+            font-size:16px;
+            line-height:1.7;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        }
+
+        /* 规则面板半透底 */
+        .rule-panel{
+            background:rgba(255,255,255,0.22);
+            border-radius:20px;
+            padding:24px 20px;
+            margin-top:24px;
+            text-align:left;
+        }
+        .rule-title{
+            font-size:22px;
+            font-weight:700;
+            margin-bottom:16px;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.28);
+        }
+        .rule-line{
+            font-size:16px;
+            line-height:1.8;
+            margin:10px 0;
+            text-shadow: 0 1px 1px rgba(0,0,0,0.12);
+        }
+
+        /* 咨询按钮 */
+        .phone-btn{
+            display:block;
+            width:min(320px,90%);
+            margin:36px auto 0;
+            background:#e63822;
+            color:#fff;
+            text-align:center;
+            padding:18px;
+            border-radius:999px;
+            font-size:21px;
+            font-weight:600;
+            text-decoration:none;
+            box-shadow:0 6px 16px rgba(230,56,34,0.25);
+            text-shadow:0 1px 3px rgba(0,0,0,0.3);
+        }
+
+        /* 底部品牌信息 */
+        .footer-info{
+            text-align:center;
+            margin-top:40px;
+            padding:0 20px;
+            font-size:14px;
+            color:#666;
+            line-height:1.8;
+        }
+
+        /* 新增：免责声明 超小灰色合规字体 */
+        .disclaimer{
+            margin-top:30px;
+            padding:20px;
+            font-size:12px;
+            color:#999;
+            line-height:1.7;
+            text-align:center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-wrap">
+        <h1>三大福利 · 一网搞定</h1>
+        <p>打车省钱｜司机赚钱｜免费领大流量手机卡</p>
+    </div>
+
+    <!-- 1、乘客领券 -->
+    <div class="main-card card-passenger">
+        <h2 class="card-big-title">乘客专享 最高150元打车礼包</h2>
+        <p class="card-desc-text">国企合规平台，快车专车通用，打车直接抵扣</p>
+
+        <div class="qr-container">
+            <img class="qr-img" src="passenger-qr.png" alt="乘客领券二维码">
+        </div>
+        <p class="scan-tip-text">微信长按识别<br>新用户自动领取大额打车券</p>
+
+        <div class="rule-panel">
+            <h3 class="rule-title">活动规则</h3>
+            <div class="rule-line">1. 仅限从未注册如祺出行的新用户</div>
+            <div class="rule-line">2. 礼包含多张快车、专车满减券</div>
+            <div class="rule-line">3. 优惠券限时有效，新用户专享福利</div>
+        </div>
+    </div>
+
+    <!-- 2、车主招募 -->
+    <div class="main-card card-driver">
+        <h2 class="card-big-title">车主火热招募 推荐好友赚现金</h2>
+        <p class="card-desc-text">广汽国企大平台、订单多、结算稳</p>
+
+        <div class="qr-container">
+            <img class="qr-img" src="driver-recruit-qr.png" alt="司机招募二维码">
+        </div>
+        <p class="scan-tip-text">扫码入驻司机<br>专人对接审核、培训、上线</p>
+
+        <div class="rule-panel">
+            <h3 class="rule-title">奖励与结算规则</h3>
+            <div class="rule-line">1. 推荐好友出车即可获得现金奖励</div>
+            <div class="rule-line">2. 好友跑单越久，奖励越高</div>
+            <div class="rule-line">3. 每周两次自动结算，直接到账银行卡</div>
+        </div>
+
+        <div class="rule-panel">
+            <h3 class="rule-title">入驻条件</h3>
+            <div class="rule-line">1. 驾龄3年以上、22–60周岁</div>
+            <div class="rule-line">2. 无重大事故、无不良记录</div>
+            <div class="rule-line">3. 可自带车或平台租车入行</div>
+        </div>
+    </div>
+
+    <!-- 3、免费领手机卡栏目 -->
+    <div class="main-card card-sim">
+        <h2 class="card-big-title">免费领取超大流量手机卡</h2>
+        <p class="card-desc-text">正规运营商卡｜月租低、流量多、全国通用</p>
+
+        <div class="qr-container">
+            <img class="qr-img" src="sim-qr.png" alt="手机卡领取二维码">
+        </div>
+        <p class="scan-tip-text">扫码免费申请<br>包邮到家、全程0元领取</p>
+
+        <div class="rule-panel">
+            <h3 class="rule-title">手机卡福利介绍</h3>
+            <div class="rule-line">1. 超大全国通用流量，日常追剧、直播够用</div>
+            <div class="rule-line">2. 正规运营商官方卡，可打电话、可开热点</div>
+            <div class="rule-line">3. 免费申领、包邮到家，无需出门</div>
+            <div class="rule-line">4. 长期套餐划算，性价比超高</div>
+        </div>
+    </div>
+
+    <!-- 咨询电话 -->
+    <a href="tel:13800138000" class="phone-btn">📞 电话咨询全部业务</a>
+
+    <div class="footer-info">
+        如祺出行｜广汽集团·腾讯·广州公交联合打造正规平台
+        <br>流量卡为正规运营商合作福利活动
+    </div>
+
+    <!-- 新增：专属免责声明（合规完美） -->
+    <div class="disclaimer">
+        免责声明：本页面由广州市如祺司机王师傅个人制作整理，属于个人推广宣传页面，非如祺出行官方页面。本页面所有活动、福利、推广内容均为个人整理分享，与如祺出行官方平台无任何隶属、合作、关联关系。
+    </div>
+
+</body>
+</html>
