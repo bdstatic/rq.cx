@@ -28,31 +28,35 @@ img {
         .blue-btn:hover {
             background-color: #0958d9;
         }
-</style><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=3Hus6mhvejlOt5Ot&ck=3Hus6mhvejlOt5Ot"></script>
+        .copyBtn {
+            background: #27ae60;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            font-size: 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .copyBtn:hover {
+            background: #219653;
+        }</style><script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js?id=3Hus6mhvejlOt5Ot&ck=3Hus6mhvejlOt5Ot"></script>
 </head>
 <body>
 <img src="https://rq.cx/ruqimobility.jpg" alt="如祺车主 - 大平台，订单多，提现快！" style="width:100%;">
 <img src="https://rq.cx/ruqichezhu.jpg" alt="如祺司机招募，长按图片保存，打开微信从相册里扫一扫加盟如祺" style="width:100%;">
 <p align="center">提示：<font color="#006400" size="4">长按图片</font>保存至手机相册<br />打开微信扫一扫加入如祺</p>
-<center><p><script>
-function addCopyButtons() {
- document.querySelectorAll('pre code').forEach(block => {
-   const btn = document.createElement('button');
-   btn.textContent = '复制链接';
-   btn.className = 'copy-btn';
-   btn.onclick = () => {
-     navigator.clipboard.writeText(block.textContent.trim())
-       .then(() => alert('复制成功，请发送到微信打开小程序'))
-       .catch(() => alert('复制失败，请长按文字手动复制'));
-   };
-   block.parentNode.insertBefore(btn, block);
- });
+<center><p><input type="text" id="linkVal" value="#小程序://司机招募/NtKMoc2tCl2Txbp" readonly>
+    <button class="copyBtn" onclick="copyLink()">复制链接</button>
+
+    <script>
+      function copyLink() {
+    let input = document.getElementById('linkVal');
+    input.select();
+    document.execCommand('copy');
+    this.innerText = '已复制，请在微信打开';
+    setTimeout(()=>{this.innerText='复制链接'},1500)
 }
-document.addEventListener('DOMContentLoaded', addCopyButtons);
-</script>
-<pre><code class="language-js">
-#小程序://司机招募/NtKMoc2tCl2Txbp
-</code></pre></p></center>
+    </script></p></center>
 <center><p>特惠大流量号卡：<a href="https://www.rq.cx/sim.html"><button class="blue-btn">免费领取</button></a><br />
   如祺出行客服电话：<a href="tel:4001336666">400-133-6666</a><br /></p></center>
 <center><p>&copy;2026&nbsp;如祺出行车主招募&nbsp;www.rq.cx</p></center></body>
